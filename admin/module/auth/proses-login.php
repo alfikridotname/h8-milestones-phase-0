@@ -13,7 +13,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Query bind param
-$query = "SELECT CONCAT(first_name,' ',last_name) AS fullname, password, level FROM users WHERE username = ?";
+$query = "SELECT CONCAT(first_name,' ',last_name) AS fullname, password, level FROM users WHERE username = ? and status = '1'";
 $stmt = $conn->prepare($query);
 $stmt->bind_param('s', $username);
 $stmt->execute();
