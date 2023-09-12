@@ -1,4 +1,5 @@
 <?php
+include_once('config/db.php');
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 switch ($page) {
     case 'login':
