@@ -28,6 +28,15 @@ switch ($page) {
     case 'user':
         include "./module/master/users.php";
         break;
+    case 'save-user':
+        include "./module/master/save-user.php";
+        break;
+    case 'edit-user':
+        include "./module/master/edit-user.php";
+        break;
+    case 'delete-user':
+        include "./module/master/delete-user.php";
+        break;
     default:
         include "module/error/404.php";
         break;
