@@ -25,10 +25,11 @@ if ($res->num_rows > 0) {
     $hash = $row['password'];
 
     if (password_verify($password, $hash)) {
-        $result['status']       = true;
-        $result['message']      = 'Login berhasil';
-        $_SESSION['username']   = $username;
-        $_SESSION['status']     = 'login';
+        session_start();
+        $result['status']           = true;
+        $result['message']          = 'Login berhasil';
+        $_SESSION['username']       = $username;
+        $_SESSION['system_login']   = true;
     } else {
         $result['message'] = 'Username atau Password salah';
     }
