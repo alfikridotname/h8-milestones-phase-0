@@ -8,7 +8,7 @@ include_once('config/helper.php');
 
 // Dynamic page
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-// dd($page);
+
 switch ($page) {
     case 'login':
         include "module/auth/login.php";

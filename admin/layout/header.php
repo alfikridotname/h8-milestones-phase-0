@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administrator</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <?= $css; ?>
+    <?= isset($css) ? $css : ''; ?>
 </head>
 
 <body>
