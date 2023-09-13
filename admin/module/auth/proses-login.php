@@ -13,7 +13,7 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 // Query bind param
-$query = "SELECT CONCAT(first_name,' ',last_name) AS fullname, password, level FROM users WHERE username = ? and status = '1'";
+$query = "SELECT id, CONCAT(first_name,' ',last_name) AS fullname, password, level FROM users WHERE username = ? and status = '1'";
 $stmt = $conn->prepare($query);
 $stmt->bind_param('s', $username);
 $stmt->execute();
@@ -28,6 +28,7 @@ if ($res->num_rows > 0) {
         session_start();
         $result['status']           = true;
         $result['message']          = 'Login berhasil';
+        $_SESSION['id']             = $row['id'];
         $_SESSION['fullname']       = $row['fullname'];
         $_SESSION['username']       = $username;
         $_SESSION['level']          = $row['level'];
