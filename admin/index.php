@@ -32,7 +32,16 @@ switch ($page) {
         include "module/master/delete-category.php";
         break;
     case 'product':
-        include "./module/master/products.php";
+        include "module/master/products.php";
+        break;
+    case 'save-product':
+        include "module/master/save-product.php";
+        break;
+    case 'edit-product':
+        include "module/master/edit-product.php";
+        break;
+    case 'delete-product':
+        include "module/master/delete-product.php";
         break;
     case 'user':
         include "./module/master/users.php";
