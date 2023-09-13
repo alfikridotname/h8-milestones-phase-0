@@ -29,3 +29,6 @@
  - MASTER CATEGORIES
  - MASTER PRODUCTS
  - MASTER USERS
+
+#### How to run this project
+php -S 127.0.0.1:1990 -t admin
