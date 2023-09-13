@@ -47,7 +47,7 @@ include_once('layout/menu.php');
                     </div>
                     <div class="col-md-6">
                         <label for="level" class="form-label">Level</label>
-                        <select id="level" class="form-select" name="level">
+                        <select id="level" class="form-select" name="level" required>
                             <option value="Admin">Admin</option>
                             <option value="Pembeli">Pembeli</option>
                         </select>

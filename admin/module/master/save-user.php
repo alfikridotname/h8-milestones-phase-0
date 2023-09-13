@@ -56,11 +56,26 @@ if ($id == 0) {
     mysqli_stmt_bind_param($stmt, 'ssssssiss', $firstName, $lastName, $username, $email, $password, $level, $status, $created_at, $updated_at);
     $query      = mysqli_stmt_execute($stmt);
 } else {
-    $sql        = "UPDATE users SET first_name=?, last_name=?, username=?, email=?, password=?, level=?, status=?, updated_at=? WHERE id=?";
+    // Check if password is empty or not
+    if ($password == '') {
+        $sql = "UPDATE users SET first_name=?, last_name=?, username=?, email=?, level=?, status=?, updated_at=? WHERE id=?";
+    } else {
+        $sql = "UPDATE users SET first_name=?, last_name=?, username=?, email=?, password=?, level=?, status=?, updated_at=? WHERE id=?";
+    }
+
+    // Prepare statement
     $stmt       = mysqli_prepare($conn, $sql);
     $updated_at = date('Y-m-d H:i:s');
-    mysqli_stmt_bind_param($stmt, 'ssssssisi', $firstName, $lastName, $username, $email, $password, $level, $status, $updated_at, $id);
-    $query      = mysqli_stmt_execute($stmt);
+
+    // Check if password is empty or not
+    if ($password == '') {
+        mysqli_stmt_bind_param($stmt, 'sssssiis', $firstName, $lastName, $username, $email, $level, $status, $updated_at, $id);
+    } else {
+        mysqli_stmt_bind_param($stmt, 'ssssssisi', $firstName, $lastName, $username, $email, $password, $level, $status, $updated_at, $id);
+    }
+
+    // Execute query
+    $query = mysqli_stmt_execute($stmt);
 }
 
 // Check if query success

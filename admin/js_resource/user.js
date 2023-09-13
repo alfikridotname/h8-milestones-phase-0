@@ -7,6 +7,7 @@ const tableUser = document.getElementById('table-user');
 btnAddData.addEventListener('click', function () {
     // Toggle
     formUser.classList.toggle('d-none');
+    formUser.id.value = '';
 });
 
 // formUser Submit
@@ -62,6 +63,15 @@ tableUser.addEventListener('click', function (e) {
                     formUser.last_name.value = response.data.last_name;
                     formUser.username.value = response.data.username;
                     formUser.email.value = response.data.email;
+                    const level = formUser.level.querySelectorAll('option');
+                    level.forEach(option => {
+                        if (option.value == response.data.level) {
+                            option.selected = true;
+                        }
+                    });
+                    if (response.data.status == 1) {
+                        formUser.status.checked = true;
+                    }
                 } else {
                     // Tampilkan pesan error
                     alert(response.message);
