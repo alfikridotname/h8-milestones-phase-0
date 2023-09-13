@@ -11,27 +11,22 @@ $result = [
 // GET ID
 $id = abs($_GET['id']);
 
-// Check if id same with session user id
-if ($id == $_SESSION['id']) {
-    $result['message'] = 'Tidak bisa menghapus akun sendiri';
-    echo json_encode($result);
-    exit();
-}
-
-// Delete
-$sql    = "DELETE FROM users WHERE id = ?";
+// Get data from table categories
+$sql    = "SELECT * FROM categories WHERE id = ?";
 $stmt   = mysqli_prepare($conn, $sql);
 mysqli_stmt_bind_param($stmt, 'i', $id);
 $query  = mysqli_stmt_execute($stmt);
+$resultQuery = mysqli_stmt_get_result($stmt);
+$row    = mysqli_fetch_assoc($resultQuery);
 
 // Check if data is exist
-if (!$query) {
+if (!$row) {
     $result['message'] = 'Data tidak ditemukan';
     echo json_encode($result);
     exit();
 } else {
     $result['status'] = true;
-    $result['message'] = 'Data berhasil dihapus';
+    $result['data'] = $row;
     echo json_encode($result);
     exit();
 }
