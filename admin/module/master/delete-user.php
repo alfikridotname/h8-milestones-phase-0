@@ -11,6 +11,13 @@ $result = [
 // GET ID
 $id = abs($_GET['id']);
 
+// Check if id same with session user id
+if ($id == $_SESSION['id']) {
+    $result['message'] = 'Tidak bisa menghapus akun sendiri';
+    echo json_encode($result);
+    exit();
+}
+
 // Delete
 $sql    = "DELETE FROM users WHERE id = ?";
 $stmt   = mysqli_prepare($conn, $sql);
