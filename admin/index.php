@@ -20,7 +20,16 @@ switch ($page) {
         include "module/home/home.php";
         break;
     case 'category':
-        include "./module/master/categories.php";
+        include "module/master/categories.php";
+        break;
+    case 'save-category':
+        include "module/master/save-category.php";
+        break;
+    case 'edit-category':
+        include "module/master/edit-category.php";
+        break;
+    case 'delete-category':
+        include "module/master/delete-category.php";
         break;
     case 'product':
         include "./module/master/products.php";
