@@ -16,6 +16,7 @@ CREATE TABLE `users` (
   `updated_at` datetime DEFAULT NULL,
   `level` enum('admin','pembeli') DEFAULT NULL,
   `status` tinyint(1) DEFAULT NULL,
+  `token` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
