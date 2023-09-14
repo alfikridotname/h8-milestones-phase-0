@@ -1,0 +1,15 @@
+role play 
+1. apa yang dibuat
+2. feedback
+
+feedback
+1. demo register
+2. demo login
+3. demo produk layanan ppt penjalasan di web saja
+4. flow diagram sistem arsitektur (ppt) beserta penjelasan
+5. erd pada ppt
+6. demo (fe dan be)
+7. nanti ada pertanyaan2 (2/3 pertanyaan)
+8. tampilkan kodingan (ada pertanyaan teknis / debugging)
+9. sekitar 25menit (presentasi dan demo)
+10. github set public
