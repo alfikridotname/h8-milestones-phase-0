@@ -31,4 +31,12 @@
  - MASTER USERS
 
 #### How to run this project
+
+##### Backend
 php -S 127.0.0.1:1990 -t admin
+
+##### API
+php -S 127.0.0.1:1993 -t api
+
+### Slide
+https://docs.google.com/presentation/d/14vY8ffkhWB_BZbDhlYBH29ThLYWB301uyRf6RfJgLHg/edit?usp=sharing
