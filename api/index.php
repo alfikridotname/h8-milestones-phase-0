@@ -19,4 +19,7 @@ switch ($page) {
     case 'identity':
         include "identity.php";
         break;
+    case 'checkout':
+        include "checkout.php";
+        break;
 }
