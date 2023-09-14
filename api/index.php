@@ -16,4 +16,7 @@ switch ($page) {
     case 'product':
         include "product.php";
         break;
+    case 'identity':
+        include "identity.php";
+        break;
 }

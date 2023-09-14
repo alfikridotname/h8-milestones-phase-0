@@ -1,7 +1,15 @@
 <?php
 
 // Get product
-$sql    = "SELECT * FROM products";
+$sql    =  "SELECT 
+                p.id,
+                c.nama_kategory,
+                p.nama_produk,
+                p.harga,
+                p.foto
+            FROM 
+                products p
+                INNER JOIN categories c ON p.kategori_id = c.id";
 $result = mysqli_query($conn, $sql);
 
 // Fetch all products
