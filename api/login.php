@@ -38,6 +38,7 @@ if ($result->num_rows > 0) {
         // Set result
         $results['status']   = true;
         $results['message']  = 'Login success';
+        $results['userID']   = $user['id'];
         $results['token']    = $token;
         echo json_encode($results);
         exit();
