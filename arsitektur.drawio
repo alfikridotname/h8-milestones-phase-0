@@ -1,9 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2023-09-15T01:15:23.584Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.3.7" etag="o8Uyskl0JJh0hg64Abnk" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-15T01:23:39.038Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="rn-iErUhWoqDUNLEq1YF" version="21.3.7" type="github">
   <diagram name="Page-1" id="KcvUk4ELhtfDF2DfxyxL">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-1" value="User (Pembeli)" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.azure.computer" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="111.11" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-2" value="" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.android_phone" vertex="1" parent="1">
+          <mxGeometry x="180" y="370" width="42" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-3" value="Frontend (Web Company Profile)" style="sketch=0;aspect=fixed;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#00188D;shape=mxgraph.mscae.enterprise.application" vertex="1" parent="1">
+          <mxGeometry x="440" y="55" width="191.18" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-4" value="internet" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/API_Management.svg;" vertex="1" parent="1">
+          <mxGeometry x="60" y="49" width="180.95" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-5" value="API" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.oms.config_assessment" vertex="1" parent="1">
+          <mxGeometry x="820" y="65" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-7" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="310" as="sourcePoint" />
+            <mxPoint x="140" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="124.5" as="sourcePoint" />
+            <mxPoint x="400" y="124.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-9" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="123" as="sourcePoint" />
+            <mxPoint x="760" y="123" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-10" value="BACKEND SERVER" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;fillColor=#505050;shape=mxgraph.mscae.oms.config_assessment" vertex="1" parent="1">
+          <mxGeometry x="830" y="305" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-13" value="Database MySql" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Database_for_MySQL_servers.svg;" vertex="1" parent="1">
+          <mxGeometry x="570" y="400" width="135" height="177.63" as="geometry" />
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-14" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="800" y="420" as="sourcePoint" />
+            <mxPoint x="730" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DtAmU9XuA0YXFzoAeds8-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="890" y="220" as="sourcePoint" />
+            <mxPoint x="890" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
